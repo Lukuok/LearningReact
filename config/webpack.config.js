@@ -505,6 +505,13 @@ module.exports = function(webpackEnv) {
         },
       ],
     },
+    devServer: {
+      port: 4000,
+      open: true,
+      proxy: {
+          "/": "http://localhost"
+      }
+  },
     plugins: [
       // Generates an `index.html` file with the <script> injected.
       new HtmlWebpackPlugin(
