@@ -118,6 +118,9 @@ class Game extends React.Component {
           <div>{}</div>
           <ol>{}</ol>
         </div>
+        <div>
+          {username ? <h1>{`Hello ${username}`}</h1> : <h1>Loading.. please wait!</h1>}
+        </div>
       </div>
     );
   }
