@@ -13,13 +13,24 @@ class TodoItemList extends Component {
         onRemove: 아이템을 삭제시키는 함수
         
         */
-        const { todos, oToggle, onRemove } = this.props;
+        const { todos, onToggle, onRemove } = this.props;
+
+        const todoList = todos.map(
+            ({id, text, checked}) => (
+            <TodoItem
+                id = {id}
+                text = {text}
+                checked = {checked}
+                onToggle = {onToggle}
+                onRemove = {onRemove}
+                key = {id}
+            />
+            )
+        );
 
         return ( 
             <div>
-                <TodoItem text="안녕"/>
-                <TodoItem text="리액트"/>
-                <TodoItem text="반가워"/>  
+                {todoList}
             </div>
         );
     }

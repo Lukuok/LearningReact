@@ -11,14 +11,18 @@ class TodoItem extends Component {
         onToggle: 체크박스를 키고 끄는 함수
         onRemove: 아이템을 삭제시키는 함수 
      */
+    // shouldComponentUpdate(nextProps, nextState) {
+    //     return this.props.todos !== nextProps.todos;
+    // }
+
     render() {
         const { text, checked, id, onToggle, onRemove } = this.props;
 
         return (
-            <div className="todo-item" onClick={()=>onToggle(id)}>
-                <div className="remove" onClick={(e) => {
-                        e.stopPropagation();
-                        onRemove(id);
+            <div className="todo-item" onClick = { () => onToggle(id) } >
+                <div className="remove" onClick={ (e) => {
+                            e.stopPropagation();
+                            onRemove(id);
                         }
                     }>&times;
                 </div>
