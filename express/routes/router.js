@@ -4,9 +4,8 @@ const router     = express.Router();
 const bodyParser = require('body-parser');
 
 /* Root Page */ 
-router.get('/', (req, res, next) => {
-    console.log(next);
-    res.render('hello');
+router.get('/', (req, res) => {
+    res.render('index.html');
 });
 
 /* API */

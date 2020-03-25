@@ -1,0 +1,12 @@
+.nav-sidebar-area .nav-sbar-inner .nav-outer-table {
+    display: table;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.content-area {
+    box-sizing: border-box;
+    padding-left: 320px;
+}
