@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {board_read, board_remove} from './App_reducer';
