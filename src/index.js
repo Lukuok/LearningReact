@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App       from './App';
-import Aside     from './components/aside/Aside';
+//import App       from './App';
+import Aside from './components/aside/Aside';
+import Main  from './components/home/Main';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App /> , document.getElementById('root'));
+//ReactDOM.render(<App />   , document.getElementById('root'));
 ReactDOM.render(<Aside /> , document.getElementById('aside'));
+ReactDOM.render(<Main />  , document.getElementById('fh5co-main')); 
+
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA

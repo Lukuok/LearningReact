@@ -8,9 +8,9 @@ function Aside() {
             </a>
             <aside id="fh5co-aside" role="complementary" class="border js-fullheight">
 
-                <h1 id="fh5co-logo">
+                {/* <h1 id="fh5co-logo">
                     <a href="index.html">Marble</a>
-                </h1>
+                </h1> */}
                 <nav id="fh5co-main-menu" role="navigation">
                     <ul>
                         <li class="fh5co-active">
@@ -70,4 +70,5 @@ function Aside() {
         </div>
     );
 }
+
 export default Aside;
