@@ -1,8 +1,10 @@
 import React from 'react';
+import Aside from '../aside/Aside'
 
-function Main() {
+function Home() {
     return (
     <div>
+        <Aside/>
         <div class="fh5co-narrow-content">
             <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">Recent Blog</h2>
             <div class="row row-bottom-padded-md">
@@ -228,4 +230,4 @@ function Main() {
     );
 }
 
-export default Main;
+export default Home;
