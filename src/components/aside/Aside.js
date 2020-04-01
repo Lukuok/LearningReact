@@ -14,10 +14,10 @@ function Aside() {
                 <nav id="fh5co-main-menu" role="navigation">
                     <ul>
                         <li class="fh5co-active">
-                            <a href="index.html">Home</a>
+                            <a href="/">Home</a>
                         </li>
                         <li>
-                            <a href="blog.html">Blog</a>
+                            <a href="blog">Blog</a>
                         </li>
                         <li>
                             <a href="portfolio.html">Portfolio</a>
